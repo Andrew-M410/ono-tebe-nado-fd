@@ -1,12 +1,12 @@
 /*Задал цвет фону для удобства*/
-html{
+html {
   background-color: #929292;
 }
 
 /*Большинство текста использует данные стили*/
-.body{
+.body {
   font-family:  Raleway, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 120%;
   color: #000;
@@ -16,59 +16,40 @@ html{
 
 .header{
   font-size: 18px;
-  padding: 92px 50px 95px;
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr min-content 1fr;
   background-color: #fff;
+  padding: 92px 50px 95px;
+  text-underline-offset: 4px;
 }
 
-.nav__list-header{
+.nav__list-header {
   display: flex;
   gap: 31px;
-  list-style-position: inside; /*Для corecting*/
+  list-style-position: inside;
 }
 
-.nav__item{
+.nav__item {
   list-style: none;
 }
 
-.nav__item-decor{
+.nav__item-decor {
   list-style: circle;
+  padding-left: 2px;
 }
 
-/*Тут правлю миллимитровые отступы*/
-.corecting{
-  padding-left: 3px;
-  margin-left: 3px;
-}
-
-.nav__item-active .nav__link{
-  text-decoration: none;
-}
-
-.nav__link{
-  text-underline-offset: 4px;
-}
-
-.header__logo{
+.header__logo {
   width: 148px;
   height: 105px;
-  margin: 0 181px 0 41px;
+  margin-left: 10px;
 }
 
-.contacts__list{
+.contacts__list {
+  max-width: 240px;
+  justify-self: end;
   list-style: none;
   line-height: 135%;
-}
-
-.contacts__list-decor{
-  text-underline-offset: 4px;
-  text-decoration: underline;
-
-}
-
-.address{
-  font-style: normal;
 }
 
 /*============cover==============*/
