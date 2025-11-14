@@ -54,7 +54,78 @@ html {
 
 /*============cover==============*/
 
+.cover{
+  position: relative;
+  z-index: -2;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+  color: #fff;
+}
 
+.overlay{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.cover__title {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 0.3em;
+}
+
+.accent__span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.text-right {
+  text-align: right;
+  padding-top: 20px;
+  margin-right: -30px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  font-size: 22px;
+}
+
+.description__text {
+  line-height: 127%; 
+}
+
+.long__word-spacing{
+  word-spacing: 19px;
+}
+
+.short__word-spacing{
+  word-spacing: 18px;
+}
+
+.description__button {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  background: none;
+}
 
 /*============lots==============*/
 
