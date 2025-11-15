@@ -129,7 +129,7 @@ html {
 /*============lots==============*/
 
 .lots{
-  margin: 180px 24px 120px;
+  padding: 180px 24px 120px;
 }
 
 .lots__subtitle{
@@ -199,6 +199,39 @@ html {
 
 /*============about==============*/
 
+.about{
+  padding: 0 24px 180px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 334px 1fr;
+}
 
+.about__logo{
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 35px 0 0 47px;
+}
+
+.about__logo-image{
+  height: 114px;
+}
+
+.about__subtitle{
+  padding: 148px 0px 111px;
+}
+
+.about__text{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__text-item{
+  display: block;
+}
 
 /*============footer==============*/
