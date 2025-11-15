@@ -1,6 +1,5 @@
-/*Задал цвет фону для удобства*/
 html {
-  background-color: #929292;
+  background-color: #fff;
 }
 
 /*Большинство текста использует данные стили*/
@@ -10,6 +9,7 @@ html {
   font-size: 20px;
   line-height: 120%;
   color: #000;
+  text-underline-offset: 4px;
 }
 
 /*============header==============*/
@@ -20,7 +20,6 @@ html {
   align-items: center;
   grid-template-columns: 1fr min-content 1fr;
   padding: 92px 50px 95px;
-  text-underline-offset: 4px;
 }
 
 .nav__list-header {
@@ -31,6 +30,10 @@ html {
 
 .nav__item {
   list-style: none;
+}
+
+.nav__item-link{
+  text-decoration: none;
 }
 
 .nav__item-decor {
@@ -45,10 +48,13 @@ html {
 }
 
 .contacts__list {
-  max-width: 240px;
-  justify-self: end;
   list-style: none;
   line-height: 135%;
+}
+
+.contacts__list-header{
+  max-width: 240px;
+  justify-self: end;
 }
 
 /*============cover==============*/
@@ -143,7 +149,8 @@ html {
 }
 
 .lots__card-list{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   list-style: none;
 }
@@ -186,9 +193,10 @@ html {
 .card-title{
   font-weight: 700;
   font-size: 22px;
-  line-height: 120%;
+  line-height: 119%;
   text-transform: uppercase;
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .look-more-lots{
@@ -235,3 +243,38 @@ html {
 }
 
 /*============footer==============*/
+
+.footer{
+  font-size: 18px;
+  padding: 0 50px 82px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contacts__list-footer{
+  max-width: 270px;
+}
+
+.nav__list-footer{
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  align-items: center;
+  line-height: 120%;
+}
+
+.socials__list{
+  display: flex;
+  justify-content: end;
+  gap: 48px;
+}
+
+.socials__item{
+  list-style: none;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.socials__link{
+  height: 100%;
+}
