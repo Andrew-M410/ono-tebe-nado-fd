@@ -206,8 +206,8 @@
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  gap: 25px;
-  padding: 0 24px 180px;
+  gap: 8px 25px;
+  padding: 35px 24px 180px;
 }
 
 .about__logo {
@@ -215,7 +215,7 @@
   align-items: center;
   width: 240px;
   height: 240px;
-  margin: 35px 0 0 47px;
+  margin: 0 auto;
   border-radius: 50%;
   background-color: #000;
 }
@@ -225,13 +225,15 @@
 }
 
 .about__subtitle {
-  padding: 148px 0px 111px;
+  align-self: center;
+  padding-top: 10px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  grid-column: 2/3;
 }
 
 .about__text-item {
