@@ -20,17 +20,17 @@
 
 .nav__list-header {
   display: flex;
-  gap: 31px;
+  gap: 32px;
   list-style-position: inside;
 }
 
 .nav__item {
-  list-style: none;
+  padding-left: 1px;
+  list-style: circle;
 }
 
-.nav__item-decor {
-  padding-left: 2px;
-  list-style: circle;
+.nav__item-no-decor {
+  list-style: none;
 }
 
 .nav__item-active__link {
@@ -57,7 +57,6 @@
 
 .cover {
   position: relative;
-  z-index: -2;
   padding: 165px 50px 50px;
   color: #fff;
   text-transform: uppercase;
@@ -70,10 +69,15 @@
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.full-steam-ahead {
+  position: relative;
+  z-index: 2;
 }
 
 .cover__title {
@@ -109,14 +113,7 @@
 
 .description__text {
   line-height: 127%;
-}
-
-.long__word-spacing {
   word-spacing: 19px;
-}
-
-.short__word-spacing {
-  word-spacing: 18px;
 }
 
 .bet__button {
@@ -153,7 +150,6 @@
 
 .lots__card {
   position: relative;
-  z-index: -2;
   width: 334px;
   min-height: 596px;
   padding: 48px 40px;
@@ -197,7 +193,8 @@
 
 .look-more-lots {
   display: block;
-  padding: 30px 0 0 40px;
+  max-width: fit-content;
+  margin: 30px 0 0 40px;
   text-underline-offset: 5px;
 }
 
@@ -206,7 +203,7 @@
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  gap: 8px 25px;
+  gap: 25px;
   padding: 35px 24px 180px;
 }
 
@@ -225,15 +222,13 @@
 }
 
 .about__subtitle {
-  align-self: center;
-  padding-top: 10px;
+  margin: 114px 0 110px;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  grid-column: 2/3;
 }
 
 .about__text-item {
@@ -250,7 +245,9 @@
 }
 
 .contacts__list-footer {
-  max-width: 270px;
+  max-width: 260px;
+  line-height: 138%;
+  letter-spacing: 0.1px;
 }
 
 .nav__list-footer {
@@ -258,7 +255,7 @@
   flex-direction: column;
   align-items: center;
   gap: 0;
-  line-height: 120%;
+  line-height: 123%;
 }
 
 .socials__list {
@@ -274,5 +271,5 @@
 }
 
 .socials__link {
-  height: 100%;
+  min-height: fit-content;
 }
